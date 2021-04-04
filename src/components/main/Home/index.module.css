@@ -1,0 +1,70 @@
+.container {
+    padding: 0 40px;
+}
+
+.fields {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px 30px 50px;
+}
+
+.input-group-text {
+    background-color: transparent;
+    margin: 0 10px;
+    color: grey;
+    border: none;
+    border-radius: 1px;
+}
+
+.search-bar, .search-bar-dark {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: all 0.50s linear;
+}
+
+.search-bar-dark {
+    color: white;
+}
+
+.input-group {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    display: flex;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.dropdown {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: grey;
+}
+
+.noCountries {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        padding: 0 20px;
+    }
+    .fields {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .input-group {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

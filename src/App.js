@@ -12,6 +12,7 @@ import "./index.css";
 import Header from "../src/components/partials/Header";
 import Home from "../src/components/main/Home";
 import CountryDetails from "../src/components/main/CountryDetails";
+import PageNotFound from "../src/components/PageNotFound";
 
 export const Context = React.createContext(null);
 
@@ -50,7 +51,8 @@ function App() {
           ) : (
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/:name" component={CountryDetails} />
+              <Route path="/:name" component={CountryDetails} />
+              <Route path="/not-found" component={PageNotFound} />
             </Switch>
           )}
         </Router>

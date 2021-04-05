@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./components/GlobalStyles";
 import { lightTheme, darkTheme } from "./components/Theme";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import { Spinner } from "react-bootstrap";
 import axios from "axios";
 
@@ -51,8 +51,8 @@ function App() {
           ) : (
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/:name" component={CountryDetails} />
               <Route path="/not-found" component={PageNotFound} />
+              <Route path="/:name" component={CountryDetails} />
             </Switch>
           )}
         </Router>

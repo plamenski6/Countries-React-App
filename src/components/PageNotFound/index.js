@@ -5,7 +5,7 @@ import classes from "./index.module.css";
 const PageNotFound = () => {
     return (
         <div className={classes.pageNotFound}>
-            <p>PAGE NOT FOUND!</p>
+            <h1>PAGE NOT FOUND!</h1>
         </div>
     )
 }
